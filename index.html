@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>ENTER</title>
+<style>
+  body {
+    background: white;
+    font-family: "MS Gothic", "Osaka", monospace;
+    text-align: center;
+  }
+
+  .enter-img {
+    width: 320px;          /* ← かなり大きく */
+    animation: blink 1.2s steps(1) infinite;
+  }
+
+  .enter-text {
+    font-size: 12px;       /* ← ENTER文字を小さく */
+    margin-top: 5px;
+  }
+
+  @keyframes blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+
 </head>
 <body>
 <center>
 
 <br><br><br>
 <h2>ようこそ</h2>
-<p>ここは個人サイトです。ここはまだ更新がありません。<br>
+<p>ここはまだ更新がありません。<br>
 ■■まで更新する必要があります</p>
 
 <br><br><br><br>
 <h1>
-   <blink><a href="main.html">ENTER</a>
-   <img src="arrow1.gif"></blink>
+  <a href="main.html">
+    <img src="arrow1.gif" class="enter-img" alt="ENTER">
+  </a>
 </h1>
+
+<div class="enter-text">
+  ENTER
+</div>
+
 <p>ここは彼だけの世界ではありません</p>
 </center>
 </body>
