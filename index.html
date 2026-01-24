@@ -9,17 +9,16 @@
   }
 
   .enter-img {
-    width: 320px;          /* ← かなり大きく */
-    animation: blink 1.2s steps(1) infinite;
+    width: 270px;          /* ← ここの数値変えれば画像の大きさ変わるよ） */
   }
 
   .enter-text {
-    font-size: 12px;       /* ← ENTER文字を小さく */
+    font-size: 30px;       /* ← 文字の大きさかわるよん */
     margin-top: 5px;
   }
 
   @keyframes blink {
-    0%   { opacity: 1; }
+    0%   { opacity: 1; }　/* ← もしまた画像を点滅させたくなった時用 */
     50%  { opacity: 0; }
     100% { opacity: 1; }
   }
