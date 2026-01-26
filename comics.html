@@ -1,6 +1,6 @@
 <head>
 <meta charset="UTF-8">
-<title>COMICS</title> <!-- ページごとにここだけ変えてね -->
+<title>COMICS</title> 
 
 <style>
 body {
@@ -12,21 +12,24 @@ body {
   color: #333;
 }
 
-/* 上部ナビ */
-.nav {
-  margin-top: 20px;
-  font-size: 16px;
-}
+    /* 上部ナビ */
+    .nav {
+      text-align: center;
+      padding: 15px;
+      border-bottom: 1px solid black;
+    }
 
-.nav a {
-  color: #000;
-  text-decoration: none;
-  margin: 0 6px;
-}
+    .nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+    }
 
-.nav a:hover {
-  text-decoration: underline;
-}
+    .nav a:hover {
+      background: black;
+      color: white;
+    }
+
 
 /* メイン枠（中身置く場所） */
 .content {
@@ -40,3 +43,18 @@ body {
 }
 </style>
 </head>
+
+<body>
+
+  <!-- 上部リンク -->
+  <div class="nav">
+    <a href="main.html">MAIN</a> |
+    <a href="art.html">ART</a> |
+    <a href="comics.html">COMICS</a> |
+    <a href="data.html">DATA</a> |
+    <a href="diary.html">DIARY</a>
+  </div>
+
+</body>
+
+
